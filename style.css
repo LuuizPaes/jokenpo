@@ -64,7 +64,7 @@ button:hover {
 }
 
 #scissors {
-    padding-right: 35px;
+    padding: 30px;
     background-color: #07f385;
 }
 p {
@@ -80,4 +80,30 @@ p {
 
 .machine-score span {
     color: #f5190a;
+}
+
+@media (max-width: 460px ) {
+    .container {
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
 }

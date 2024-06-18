@@ -25,16 +25,16 @@ const playTheGame = (human, machine) => {
     console.log("humano: " + human + "maquina: " + machine)
 
     if(human === machine) {
-        result.innerHTML = "Você empatou!"
+        result.innerHTML = "Você empatou 🙏"
     } else if( (human === 'paper' && machine === 'rock') ||
                 (human === 'rock' && machine === 'scissors') ||
                 (human === 'scissors' && machine === 'paper')) {
         humanScoreNumber++
         humanScore.innerHTML =  humanScoreNumber           
-        result.innerHTML = "Você ganhou!"
+        result.innerHTML = "Você ganhou 👏"
     } else {
         machineScoreNumber++
         machineScore.innerHTML = machineScoreNumber
-        result.innerHTML = "Você perdeu!"
+        result.innerHTML = "Você perdeu 👎"
     }
 }
